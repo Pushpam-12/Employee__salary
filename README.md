@@ -96,3 +96,4 @@ When a client (e.g., a web browser) makes a request to this server, it reads the
 If any errors occur during file reading, it responds with a 404 status code.
 It also appends an additional HTML <h1> element to display the total salary as "Total Salary = 729000" in the response.
 In summary, this Node.js code reads an HTML file, serves it through an HTTP server, and adds extra HTML content to the response.
+In the document link,i write the index-js code and paste the screenshot of the code
