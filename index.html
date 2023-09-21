@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        width: 90%;
+        margin:auto ;
+        height: 33rem;
+        text-align : center;
+        font-size: large;
+        background:#f9c3d6;
+        padding: 1px;
+        color:black;
+        border: 2px solid rgb(17, 255, 0);
+    }
+    h1{
+        text-align: center;
+    }
+    .eee{
+        display: none;
+    }
+    button{
+       text-align: center;
+       justify-content: space-between;
+       width: 10rem;
+       height: 2rem;
+       background-color:rgb(0, 255, 72);
+       cursor: pointer;
+    }
+    
+    .btn1{
+        margin-left: 32rem;
+        margin-top: 1rem;
+    }
+</style>
+
+<body>
+    <h1> Employee Salary Table.</h1>
+    <table border="1 solid black">
+        <tbody>
+            <tr>
+                <th>SL No.</th>
+                <th>Name</th>
+                <th> UID </th>
+                <th>City</th>
+                <th>Job role</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td> 01 </td>
+                <td> pushpam Kumari </td>
+                <td> 20132</td>
+                <td>begusarai</td>
+                <td> Developer </td>
+                <td>
+                    <input type="text" id="emp1" class="emp" />
+                </td>
+            </tr>
+
+            <tr>
+                <td> 02 </td>
+                <td> navneet Kumar</td>
+                <td> 20149 </td>
+                <td> punjab</td>
+                <td> Programmer </td>
+                <td>
+                    <input type="text" id="emp2" class="emp" />
+                </td>
+            </tr>
+
+            <tr>
+                <td> 03 </td>
+                <td> deepika</td>
+                <td>20143</td>
+                <td>HP</td>
+                <td>Analyst</td>
+                <td>
+                    <input type="text" id="emp3" class="emp" />
+                </td>
+            </tr>
+            <tr>
+                <td> 04 </td>
+                <td>Prabhat</td>
+                <td>20146</td>
+                <td> UP</td>
+                <td> Coder </td>
+                <td>
+                    <input type="text" id="emp4" class="emp" />
+                </td>
+            </tr>
+            <tr>
+                <td> 05 </td>
+                <td> PUSHKAR</td>
+                <td>20159</td>
+                <td> begusarai </td>
+                <td> Developer </td>
+                <td>
+                    <input type="text" id="emp5" class="emp" />
+                </td>
+            </tr>
+               
+        </tbody>
+    </table>
+    <button class="btn1" onclick="show()">show</button>
+    <!-- <button class="btn2" onclick="hide()">Hide</button> -->
+    <button class="btn1" onclick="tsalar()">Total Sallary</button>
+    <!-- <h1><input type="number" id="totalsalary"/> </h1> -->
+
+  </div>
+
+  <script>
+    let data1 = 104500;   //dev
+    let data2 = 95000;   //pro
+    let data3 = 85000;   //ana
+    let data4 = 80000;   //coder
+    let data5 = 90000;
+    function show() {
+      let emp1 = (document.getElementById("emp1").value = data1);
+      let emp2 = (document.getElementById("emp2").value = data2);
+      let emp3 = (document.getElementById("emp3").value = data3);
+      let emp4 = (document.getElementById("emp4").value = data4);
+      let emp5 = (document.getElementById("emp5").value = data1);
+      let emp6 = (document.getElementById("emp6").value = data4);
+      let emp7 = (document.getElementById("emp7").value = data2);
+      let emp8 = (document.getElementById("emp8").value = data3);
+    }
+
+    function tsalar(){
+        let total=data1+data2+data3+data4+data5;
+        alert(total);
+        document.getElementById("totalsalary").value = total;
+
+    }
+  </script>
+
+
+</body>
+
+</html>
