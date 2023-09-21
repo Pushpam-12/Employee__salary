@@ -80,36 +80,8 @@ tsalary(): Calculates and displays the total salary of all employees when the "T
 The code has some structural and logical issues, such as the missing data5 variable and an attempt to set a non-existent element's value for total salary.
 
 **Node.js Code (index.js)  **
+https://docs.google.com/document/d/1VHsFkF1vywxB2MP2NuadF5xhaDuGeEHehTXVIsCXhq8/edit
   
-const fs = require('fs').promises; const fs1 = require('fs'); 
-const http = require('http');  
-  
-async function readFile(filePath){     
-try{  
-        const data = await fs.readFile(filePath);         
-        console.log(data.toString());         
-        const data1 = data.toString();         
-        fs.writeFile('newFile.html', data1)  
-    }catch(error){  
-        console.log("Error", error, "in file ", filePath );  
-    } }  
-readFile('index.html');
-http.createServer(function (req, res){     
-fs1.readFile('newFile.html', 
-function(err, data) {        
-if (err) {            
-res.writeHead(404);  
-console.error('Error reading HTML file:', err);           
-res.end();  
-        }        
-else {  
- res.writeHead(200, {'Content-type': 'text/html'})             
- res.write(data);              
- res.write("<h1>Total Salary = 729000</h1>");  
-        }  
-    });  
-}).listen(8080);  
-
 **DISCRIPTION**
 This Node.js code, found in the index.js file, performs the following tasks in a concise description:
 
